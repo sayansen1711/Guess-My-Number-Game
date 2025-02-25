@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess My Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <button id="reset" onclick="">Again!</button>
-    <h3>Between 1 and 20</h3>
-    <h1>Guess My Number!</h1>
+    <div id="topLine">
+        <h3>(Between 1 and 20)</h3>
+        <button id="reset" onclick="resetCurrentScore()">Again!</button>
+        <br style="clear: both;" />
+    </div>
+    <div id="centerBody">
+        <h1>Guess My Number!</h1>
+        <div class="line">
+            <div class="box">
+                ?
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
