@@ -1,21 +1,17 @@
 body{
     background-color: rgb(15, 15, 15);
-    font-family: 'Public Pixel', sans-serif;
-}
-h3{
-   
-    /* font-weight: bolder; */
-    color: rgb(255, 255, 255);
-    float: right;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
 }
 h1{
     text-align: center;
     font-size: 250%;
     color: aliceblue;
 }
-#reset{
-    font-size: 30px;
-    font-family: 'Public Pixel', sans-serif;
+#reset, #check{
+    font-size: 20px;
+    height: 50px;
+    font-family: "Press Start 2P", serif;
     color: black;
     /* font-weight: bold; */
     padding-left: 30px;
@@ -26,10 +22,19 @@ h1{
     border-radius: 5px;
     float: left;
 }
+h3{   
+    /* font-weight: bolder; */
+    color: rgb(255, 255, 255);
+    float: right;
+}
 .line{
+    margin-top: 100px;
+    margin-bottom: 50px;
     display: flex;
+    height: 0px;
     justify-content: center;
     align-items: center;
+    border: solid 5px white;
     /* padding: 10px; */
 }
 
@@ -43,3 +48,42 @@ h1{
     color: black;
 }
 
+.dynamicData{
+    margin: auto;
+    padding-top: 40px;
+    width: 50%;
+    /* border: solid 5px white; */
+    padding-left: 250px;
+}
+
+#guessingText{
+    padding-left: 70px;
+    display: inline-block;
+}
+#userInput{
+    display: inline-block;
+    margin: 10px;
+    font-family: "Press Start 2P", serif;
+    /* border: solid 5px white; */
+    border: 5px solid white;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    height: 50px;
+    width: 175px;
+    font-size: 30px;
+}
+
+.ctaScores{
+    margin: auto;
+    width: 50%;
+    /* border: white solid 5px; */
+    padding-left: 250px;
+    
+}
+
+#scores{
+    display: inline-block;    
+    margin-left: 80px;
+    padding-top: 10px;
+}
