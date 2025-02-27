@@ -43,7 +43,7 @@ h3{
     text-align: center;
     background-color: white;
     font-size: 500%;    
-    width: 100px;
+    width: fit-content;
     height: 100px;
     color: black;
 }

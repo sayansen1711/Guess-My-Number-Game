@@ -14,7 +14,7 @@
 <body>
     <div id="topLine">
         <h3>(Between 1 and 20)</h3>
-        <button type="reset" id="reset" onclick="resetCurrentScore()">Again!</button>
+        <button type="reset" id="reset">Again!</button>
         <br style="clear: both;" />
     </div>
     <div id="centerBody">
@@ -32,9 +32,10 @@
     </div>
     <div class="ctaScores">
         <button type="submit" id="check" onclick="submit()">Check!</button>
-        <p style="color: aliceblue;" id="scores">&#128175 Score: <output id="currentScore"
-                style="color: aliceblue;"></output><br><br>
-            &#127941 Highscore: <output id="maxScore" style="color: aliceblue;"></output>
+        <p style="color: aliceblue;" id="scores">&#128175 Score: <output id="currentScore"style="color: aliceblue;">20</output>
+            <br>
+            <br>
+            &#127941 Highscore: <output id="maxScore" style="color: aliceblue;">0</output>
         </p>
         <br style="clear: both;" />
     </div>
