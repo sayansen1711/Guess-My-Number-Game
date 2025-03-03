@@ -1,4 +1,4 @@
-const randomNumber = Math.trunc(Math.random() * 20) + 1; //generating random number
+let randomNumber = Math.trunc(Math.random() * 20) + 1; //generating random number
 //console.log(randomNumber);
 //document.querySelector('.box').textContent = randomNumber; //later to be commented to hide the secret number
 var score = 20, highscore = 0;
@@ -22,19 +22,27 @@ function submit() {
     else {
         document.querySelector('#guessingText').innerHTML = '&#127881 Correct Number!';
         //document.querySelector('body').innerHTML='<style>body{background-color: green;}</style>';
-        document.querySelector('body').style.backgroundColor = 'green';
+        document.querySelector('body').style.backgroundColor = '#40cf40';
+        //display the Number on correct guess
         if (score > highscore)
             highscore = score;
         document.querySelector('#maxScore').textContent = highscore;
+        document.querySelector('.box').textContent=randomNumber;
+    }
+    if(score<1){
+        document.querySelector('#guessingText').innerHTML ='&#128529 Game Lost';
+        document.querySelector('body').style.backgroundColor='#d4223a';
+        document.querySelector('.box').textContent=randomNumber;
     }
 }
 
 document.querySelector('#reset').addEventListener('click', function () { //implementing Again! button logic using user event listener
+    randomNumber = Math.trunc(Math.random() * 20) + 1;                  //generating the random number
     document.querySelector('.box').textContent = '?';                   //changed to ? after right value is displayed on Box
     document.querySelector('#currentScore').textContent = '20';         //reset the current score to 20
     document.getElementById('userInput').value = '';                    //reset the user input text field
     document.querySelector('#guessingText').innerHTML = 'Start guessing...';
-    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.backgroundColor = 'black';     //back ground color will be changed to black
     score = 20;
 });
 
